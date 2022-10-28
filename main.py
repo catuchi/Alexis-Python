@@ -35,6 +35,8 @@ def respond(voice_data):
     url = f'https://google.nl/maps/place/{location}/&amp;'
     webbrowser.get().open(url)
     print(f'Here is the location of {location}')
+  if 'exit' in voice_data:
+    exit()
 
 time.sleep(1)
 print('How can I help you?')
